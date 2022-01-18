@@ -57,5 +57,6 @@ body {
 
   .button {
     align-self: center;
+    font-size: 0.675rem;
   }
 }

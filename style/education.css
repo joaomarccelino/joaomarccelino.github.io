@@ -33,7 +33,7 @@
 
 .college1,
 .college2 {
-  padding: 32px 180px 40px 40px;
+  padding: 32px 40px 40px 40px;
 }
 
 .college1 {
@@ -165,12 +165,54 @@
     margin-left: 80px;
     margin-right: 80px;
   }
-  /* .course {
-    padding: 8px 0 8px 8px;
-    max-width: 250px;
-    width: 250px;
+}
+
+@media (max-width: 800px) {
+  .education-courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .education-title h1 {
+    font-size: 2.5rem;
   }
 
+  .education-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .college1,
+  .college2 {
+  padding: 16px 20px 20px 20px;
+}
+  .college1 h4,
+  .college1 p,
+  .college2 h4,
+  .college2 p   {
+    font-size: 0.675rem;
+  }
+  
+  .college1 h3,
+  .college2 h3 {
+    font-size: 1.125rem;
+  }
+
+  .college1 p + p,
+  .college2 p + p {
+    margin-top: 40px;
+  }
+  .education-courses {
+    gap: 10px 30px;
+    margin-top: 40px;
+  }
+
+  .course {
+    padding: 8px 0 8px 8px;
+    background: var(--w);
+    border: 1px solid var(--p1);
+    border-radius: 5px;
+  }
   .course h4 {
     font-size: 0.675rem;
   }
@@ -181,16 +223,5 @@
 
   .course p {
     font-size: 0.675rem;
-  } */
-}
-
-@media (max-width: 800px) {
-  .education-courses {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .college1,
-  .college2 {
-    padding: 32px 40px 40px 40px;
   }
 }
