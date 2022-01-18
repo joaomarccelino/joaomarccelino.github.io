@@ -76,6 +76,9 @@
 }
 
 @media (max-width: 400px) {
+  .profile {
+    margin-top: 10px;
+  }
   .profile-text h1 {
     font-size: 2rem;
   }
@@ -83,10 +86,12 @@
   .profile-text p {
     font-size: 0.675rem;
   }
+  .profile-divider {
+    margin-top: 20px;
+  }
   .profile-divider img {
     width: 10%;
-  }
-  
+  }  
   .divider {  
     width: 100px;
     height: 2px;

@@ -68,3 +68,9 @@ body {
     font-size: 0.675rem;
   }
 }
+
+@media (max-width: 400px) {
+  .section-divider {
+    margin-bottom: 0px;
+  }
+}
