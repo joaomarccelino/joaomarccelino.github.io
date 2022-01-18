@@ -1,0 +1,154 @@
+#education {
+  margin-top: 120px;
+  align-items: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.education-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.education-title h2 {
+  text-transform: uppercase;
+  font: 600 2.25rem/1.1 "Fira Sans", sans-serif;
+  color: var(--p5);
+  margin-bottom: 40px;
+}
+
+.education-title h1 {
+  font: 600 4rem/1.1 "Poppins", sans-serif;
+}
+
+.education-college {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 120px;
+}
+
+.college1,
+.college2 {
+  padding: 32px 180px 40px 40px;
+}
+
+.college1 {
+  background-color: var(--g12);
+  border-radius: 5px;
+  position: relative;
+}
+
+.college1 h4 {
+  font: 400 1.125rem/1.1 "Fira Sans", sans-serif;
+  text-transform: uppercase;
+  color: var(--g2);
+}
+
+.college1 h3 {
+  font: 600 2.25rem/1.1 "Poppins", sans-serif;
+  color: var(--w);
+}
+
+.college1 p {
+  font: 400 1.125rem/1.1 "Fira Sans", sans-serif;
+  color: var(--g2);
+}
+
+.college1 p + p {
+  margin-top: 80px;
+}
+
+.college1::before {
+  content: "";
+  width: 160px;
+  height: 160px;
+  background: url("../img/detail.svg") no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  left: -40px;
+}
+
+.college2 {
+  background-color: var(--w);
+  border-radius: 5px;
+  border: 1px solid var(--g12);
+}
+
+.college2 h4 {
+  font: 400 1.125rem/1.1 "Fira Sans", sans-serif;
+  text-transform: uppercase;
+  color: var(--g11);
+}
+
+.college2 h3 {
+  font: 600 2.25rem/1.1 "Poppins", sans-serif;
+  color: var(--g11);
+}
+
+.college2 p {
+  font: 400 1.125rem/1.1 "Fira Sans", sans-serif;
+  color: var(--g9);
+}
+
+.college2 p + p {
+  margin-top: 80px;
+}
+
+.education-courses {
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.course {
+  padding: 16px 0 16px 16px;
+  background: var(--w);
+  border: 1px solid var(--p1);
+  border-radius: 5px;
+}
+
+.course h4 {
+  font: 400 1.125rem/1.1 "Fira Sans", sans-serif;
+  text-transform: uppercase;
+  color: var(--g9);
+}
+
+.course h3 {
+  font: 600 2rem/1.1 "Poppins", sans-serif;
+  color: var(--g11);
+}
+
+.course p {
+  font: 400 1.125rem/1.1 "Fira Sans", sans-serif;
+  color: var(--g9);
+}
+
+.course .separator {
+  color: var(--w);
+}
+
+@media (max-width: 1000px) {
+  .education-title {
+    grid-template-columns: 1fr;
+  }
+
+  .education-college {
+    grid-template-columns: 1fr;
+  }
+  .college1,
+  .college2 {
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .education-courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

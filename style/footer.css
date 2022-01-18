@@ -1,0 +1,39 @@
+#contact {
+  background: var(--g12);
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0 120px 0;
+}
+
+.social-media {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+#contact .email {
+  font: 600 2.25rem/1.1 "Poppins", sans-serif;
+  color: var(--w);
+  margin-top: 40px;
+}
+
+#contact .email:hover, 
+.footer-menu a:hover{
+  color: var(--g5);
+}
+
+.footer-menu ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  font: 400 2.25rem/1.1 "Fira Sans", sans-serif;  
+  margin-top: 80px;
+}
+
+.footer-menu a {
+  color: var(--g1);
+  
+}
+

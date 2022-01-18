@@ -1,0 +1,51 @@
+@import "./header.css";
+@import "./colors.css";
+@import "./about.css";
+@import "./projects.css";
+@import "./education.css";
+@import "./footer.css";
+
+h1, h2, h3, h4 p, span, ul, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--g1);
+}
+
+.button {
+  padding: 10px;
+  background: linear-gradient(#10E8C7 0%, #25CCB3 100%);
+  border-radius: 5px;
+  color: var(--p9);
+  font: 600 1.125rem/1.1 "Fira Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background: linear-gradient(#16bba2 0%, #238576 100%);
+}
+
+.section-divider {
+  height: 8px;
+  max-width: 1200px;
+  background: linear-gradient(to right, var(--g1) 50%, var(--p5) 0%);
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
