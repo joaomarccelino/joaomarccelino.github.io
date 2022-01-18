@@ -49,3 +49,13 @@ body {
   height: auto;
   display: block;
 }
+
+@media (max-width: 1000px) {
+  .section-divider {
+    background: var(--p5);
+  }
+
+  .button {
+    align-self: center;
+  }
+}

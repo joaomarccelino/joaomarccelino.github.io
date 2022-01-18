@@ -43,7 +43,7 @@
     align-items: center;
   }
 
-  .header ul li a {
-    margin-bottom: 10px;
+  .header ul li{
+    margin-bottom: 20px;
   }
 }
