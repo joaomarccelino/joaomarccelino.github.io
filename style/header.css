@@ -38,6 +38,9 @@
 }
 
 @media (max-width:600px) {
+  .header {
+    padding: 20px 0px;
+  }
   .header ul {
     flex-direction: column;
     align-items: center;

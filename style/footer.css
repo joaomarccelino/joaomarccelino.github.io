@@ -50,10 +50,38 @@
 }
 
 @media (max-width: 1000px) {
-  .footer-container .email {
+  .footer-container .email,
+  .footer-menu ul  {
     font-size: 1.125rem;
   }
+}
+
+@media (max-width: 400px) {
+  .footer-container {
+    padding: 30px 0 60px 0;
+  }
+
+  .footer-container .email,
+  .footer-menu ul  {
+    font-size: 0.675rem;
+  }
+
+  .footer-container .email,
   .footer-menu ul {
-    font-size: 1.125rem;
+    margin-top: 20px;
+  }
+  .footer-container .email::after {
+    margin-top: 5px;
+  }
+  .social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .social-media img {
+    width: 70%;
+  }
+  .footer-logo {
+    width: 50%;
   }
 }

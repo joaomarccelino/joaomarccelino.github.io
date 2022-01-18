@@ -203,12 +203,12 @@
     margin-top: 40px;
   }
   .education-courses {
-    gap: 10px 30px;
+    gap: 10px 10px;
     margin-top: 40px;
   }
 
   .course {
-    padding: 8px 0 8px 8px;
+    padding: 8px 8px 8px 8px;
     background: var(--w);
     border: 1px solid var(--p1);
     border-radius: 5px;
