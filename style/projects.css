@@ -78,7 +78,7 @@
 }
 
 .project ul li::before {
-  content: '';
+  content: "";
   width: 8px;
   height: 4px;
   background: var(--p5);
@@ -87,26 +87,24 @@
   top: 13px;
 }
 
-.project-bg {
-  background: linear-gradient(to right, var(--g1) 30%, var(--g11) 0%);
+@media (min-width: 800px) {
+  .project-bg {
+    background: linear-gradient(to right, var(--g1) 30%, var(--g11) 0%);
+  }
+
+  .project-bg .project-desc h4,
+  .project-bg .project-desc h3,
+  .project-bg .project-desc strong {
+    color: var(--w);
+  }
+
+  .project-bg .project-desc p,
+  .project-bg .project-desc ul {
+    color: var(--g5);
+  }
 }
 
-.project-bg .project-desc h4,
-.project-bg .project-desc h3,
-.project-bg .project-desc strong {
-  color: var(--w);
-}
-
-.project-bg .project-desc p,
-.project-bg .project-desc ul {
-  color: var(--g5);
-} 
-
-@media (min-width: 1000px) {
- 
-}
-
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   #projects {
     justify-content: center;
   }
@@ -132,7 +130,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
   }
   .project-img {
     width: 80%;
@@ -140,33 +138,81 @@
   }
 
   .project-desc {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
   }
 }
 
 @media (max-width: 800px) {
+  .project {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .project-desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 40px;
+    width: 80%;
+  }
+
+  .project-desc h3 {
+    max-width: 10ch;
+  }
+
+  .project-desc p,
+  .project-desc h4,
+  .project ul {
+    max-width: 20ch;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .project-desc {
+    gap: 10px;
+  }
   .project-desc h3 {
     font-size: 1.5rem;
   }
-  
+
   .project-desc p,
   .project-desc h4,
   .project ul {
     font-size: 0.675rem;
   }
-   
-  .project ul {
-    padding-bottom: 10px;
-  }
- 
-}
 
-@media (max-width: 600px) {
+  .project ul {
+    padding-bottom: 0px;
+  }
+
   .projects-title h1 {
     font-size: 2.5rem;
   }
 
   .projects-title h2 {
     font-size: 1.5rem;
+  }
+
+  .project ul li::before {
+    top: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .projects-title h1 {
+    font-size: 2rem;
+  }
+
+  .projects-title h2 {
+    margin-bottom: 10px;
+    font-size: 1.125rem;
   }
 }

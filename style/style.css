@@ -23,12 +23,15 @@ body {
 }
 
 .button {
-  padding: 10px;
+  display: block;
+  padding: 10px 20px;
   background: linear-gradient(#10E8C7 0%, #25CCB3 100%);
   border-radius: 5px;
   color: var(--p9);
   font: 600 1.125rem/1.1 "Fira Sans", sans-serif;
   text-transform: uppercase;
+  text-align: center;
+  width: max-content;
 }
 
 .button:hover {
@@ -57,6 +60,11 @@ body {
 
   .button {
     align-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .button {
     font-size: 0.675rem;
   }
 }
