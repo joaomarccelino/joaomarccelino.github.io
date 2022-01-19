@@ -150,18 +150,13 @@
     justify-items: center;
   }
   .project-desc {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     align-items: center;
     justify-items: center;
     gap: 40px;
     width: 80%;
   }
 
-  .project-desc p,
-  .project ul {
-    max-width: 20ch;
-  }
 }
 
 @media (max-width: 600px) {
@@ -205,9 +200,11 @@
   }
 
   .desc {
-    display: grid;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
   }
 }
 
@@ -222,6 +219,10 @@
   .projects-title h2 {
     margin-bottom: 10px;
     font-size: 1.125rem;
+  }
+
+  .project-desc {
+    gap: 10px;
   }
 
 }
