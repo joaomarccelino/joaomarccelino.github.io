@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0 120px 0;
+  padding: 60px 0 60px 0;
 }
 
 .social-media {
@@ -17,7 +17,7 @@
 }
 
 .footer-container .email {
-  font: 600 2.25rem/1.1 "Poppins", sans-serif;
+  font: 600 1.5rem/1.1 "Poppins", sans-serif;
   color: var(--w);
   margin-top: 40px;
 }
@@ -41,7 +41,7 @@
   display: flex;
   gap: 40px;
   align-items: center;
-  font: 400 2.25rem/1.1 "Fira Sans", sans-serif;  
+  font: 400 1.5rem/1.1 "Fira Sans", sans-serif;  
   margin-top: 80px;
 }
 
