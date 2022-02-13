@@ -29,43 +29,49 @@ function initCardClone() {
       school: 'Origamid',
       course: 'UI Design',
       detail: 'Iniciante',
-      wordload: '46h'
-    },
-    {
-      school: 'COD3R',
-      course: 'React + Redux',
-      detail: '.',
-      wordload: '54h'
-    },
-    {
-      school: 'COD3R',
-      course: 'React Native',
-      detail: '.',
-      wordload: '45h'
-    },
-    {
-      school: 'Rocketseat',
-      course: 'NLW 4',
-      detail: 'Trilha React',
-      wordload: '15h'
-    },
-    {
-      school: 'Rocketseat',
-      course: 'NLW Together',
-      detail: 'Trilha React e React Native',
-      wordload: '20h'
+      workLoad: '46h'
     },
     {
       school: 'Origamid',
       course: 'CSS Grid',
       detail: '.',
-      wordload: '12h'
+      workLoad: '12h'
     },
     {
       school: 'Origamid',
       course: 'CSS Flexbox',
       detail: '.',
-      wordload: '14h'
+      workLoad: '14h'
+    },
+    {
+      school: 'Origamid',
+      course: 'Javascript',
+      detail: 'Completo ES6+',
+      workLoad: '74h'
+    },
+    {
+      school: 'COD3R',
+      course: 'React + Redux',
+      detail: '.',
+      workLoad: '54h'
+    },
+    {
+      school: 'COD3R',
+      course: 'React Native',
+      detail: '.',
+      workLoad: '45h'
+    },
+    {
+      school: 'Rocketseat',
+      course: 'NLW 4',
+      detail: 'Trilha React',
+      workLoad: '15h'
+    },
+    {
+      school: 'Rocketseat',
+      course: 'NLW Together',
+      detail: 'Trilha React e React Native',
+      workLoad: '20h'
     }
   ]
 
@@ -78,7 +84,7 @@ function initCardClone() {
     if(course.detail === '.') {
       details[1].classList.add('separator');
     }
-    details[2].innerText = course.wordload;
+    details[2].innerText = course.workLoad;
     cardSection.appendChild(cardClone);
   })
 }
