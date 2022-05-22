@@ -17,9 +17,15 @@
   <body>
     <header class="header">
       <a href="./">
-        <img class="header-logo" src="./img/logo-header.svg" alt="João Lucas">
+        <img class="header-logo" src="./img/logo.svg" alt="João Lucas">
       </a>
-      <nav>
+      <button class="mobile-menu-btn">
+        <img src="./img/mobile-menu.svg" alt="menu mobile">
+      </button>
+      <nav class="header-menu">
+        <button class="close-menu-btn">
+          <img src="./img/mobile-close.svg" alt="fechar menu mobile">
+        </button>
         <ul>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#projects">Projetos</a></li>
@@ -34,7 +40,7 @@
           <img class="image" src="./img/profile-pic.png" width="560" height="528" alt="Foto de perfil">
         </div>
         <div class="profile-text">
-          <h1>Estudante Front End & Mobile</h1>
+          <h1>Desenvolvedor Front End | React | Typescript</h1>
           <p>Iniciei meus estudos no desenvolvimento front end há pouco mais de um ano e desde então venho desenvolvendo
             alguns projetos para meu portifólio pessoal utilizando <strong>HTML</strong>, <strong>CSS</strong>,
             <strong>Javascript</strong>, <strong>Typescript</strong>, <strong>React</strong>, <strong>Next</strong> e
@@ -63,6 +69,27 @@
       </div>
       <div class="project">
         <div class="project-img">
+          <img class="image" src="./img/perdidos.jpg" width="658" height="438" alt="Telas de um aplicativo mobile">
+        </div>
+        <div class="project-desc">
+          <div class="desc">
+            <h3>
+              perdidos na night
+            </h3>
+            <p>Site desenvolvido para a banda <strong>Perdidos na Night</strong>.</p>
+          </div>
+          <div class="desc">
+            <h4>Tecnologias utilizadas</h4>
+            <ul>
+              <li>React</li>
+              <li>Typescript</li>
+            </ul>
+            <a href="https://www.perdidosnanight.com" class="button">Site</a>
+          </div>
+        </div>
+      </div>
+      <div class="project project-bg">
+        <div class="project-img">
           <img class="image" src="./img/world-acai.jpg" width="658" height="438" alt="Telas de um aplicativo mobile">
         </div>
         <div class="project-desc">
@@ -82,7 +109,7 @@
           </div>
         </div>
       </div>
-      <div class="project project-bg">
+      <div class="project">
         <div class="project-img">
           <img class="image" src="./img/podcastr.jpg" width="651" height="438" alt="Tela inicial do site podcastr">
         </div>
@@ -104,7 +131,7 @@
           </div>
         </div>
       </div>
-      <div class="project">
+      <div class="project project-bg">
         <div class="project-img">
           <img class="image" src="./img/letmeask.jpg" width="647" height="457" alt="Tela inicial do site Letmeask">
         </div>
@@ -163,26 +190,30 @@
     </article>
     <footer id="contact" class="js-scroll">
       <div class="footer-container">
-        <img class="footer-logo" src="./img/logo-footer.svg" alt="João Lucas">
-        <ul class="social-media">
-          <li><a href="https://www.facebook.com/joaomarccelino"><img src="./img/face.svg" width="40" height="39"
-                alt="logo facebook"></a></li>
-          <li><a href="https://www.linkedin.com/in/jo%C3%A3o-lucas-marcelino-075961190/"><img src="./img/linkedin.svg"
-                width="40" height="39" alt="logo linkedin"></a></li>
-          <li><a href="https://www.instagram.com/joaomarccelino/"><img src="./img/insta.svg" width="40" height="39"
-                alt="logo instagram"></a></li>
-          <li><a href="https://github.com/joaomarccelino"><img src="./img/git.svg" width="40" height="39"
-                alt="logo github"></a></li>
-        </ul>
-        <a class="email" href="mailto:joao.marcelino.esc@gmail.com">joao.marcelino.esc@gmail.com</a>
-        <nav class="footer-menu">
-          <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#education">Formação</a></li>
-            <li><a href="#contact">Contato</a></li>
+        <div class="footer-info">
+          <img class="footer-logo" src="./img/logo.svg" alt="João Lucas">
+          <nav class="footer-menu">
+            <ul>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#education">Formação</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="contact-info">
+          <h2>Contato</h2>
+          <ul class="social-media">
+            <li><a href="https://www.facebook.com/joaomarccelino"><img src="./img/face.svg" width="40" height="39"
+                  alt="logo facebook"></a></li>
+            <li><a href="https://www.linkedin.com/in/jo%C3%A3o-lucas-marcelino-075961190/"><img src="./img/linkedin.svg"
+                  width="40" height="39" alt="logo linkedin"></a></li>
+            <li><a href="https://www.instagram.com/joaomarccelino/"><img src="./img/insta.svg" width="40" height="39"
+                  alt="logo instagram"></a></li>
+            <li><a href="https://github.com/joaomarccelino"><img src="./img/git.svg" width="40" height="39"
+                  alt="logo github"></a></li>
           </ul>
-        </nav>
+          <a class="email" href="mailto:joao.marcelino.esc@gmail.com">joao.marcelino.esc@gmail.com</a>
+        </div>        
       </div>
     </footer>
     <script src="script.js"></script>

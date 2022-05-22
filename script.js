@@ -18,6 +18,27 @@ function initSmoothScroll() {
 }
 initSmoothScroll();
 
+
+// Mobile menu
+
+const mobileBtn = document.querySelector('.mobile-menu-btn');
+const closeBtn = document.querySelector('.close-menu-btn');
+const menu = document.querySelector('.header-menu');
+
+function showMobileMenu() {
+  menu.classList.add('active-menu');
+  mobileBtn.classList.add('hide-btn');
+}
+
+function closeMobileMenu() {
+  menu.classList.remove('active-menu');
+  mobileBtn.classList.remove('hide-btn');
+  console.log(closeBtn)
+}
+
+mobileBtn.addEventListener('click', showMobileMenu);
+closeBtn.addEventListener('click', closeMobileMenu);
+
 // Cards de cursos;
 function initCardClone() {
   const cardSection = document.querySelector('.education-courses');

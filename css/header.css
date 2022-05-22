@@ -7,6 +7,7 @@
   box-sizing: border-box;
   max-width: 1200px;
 }
+
 .header ul {
   display: flex;
   flex-wrap: wrap;
@@ -15,14 +16,25 @@
 }
 
 .header ul li a {
-  color: var(--g12);
+  color: var(--g1);
   font: 400 1.125rem/1.5 "Fira Sans", sans-serif;
 }
 
 .header ul li a:hover {
-  color: var(--g8);
+  color: var(--g4);
 }
 
+.mobile-menu-btn {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+.close-menu-btn {
+  background: transparent;
+  border: none;
+  display: none;
+}
 
 @media (max-width: 800px) {
   .header {
@@ -31,7 +43,7 @@
   }
 
   .header ul li a {
-    background: var(--g2);
+    background: var(--g12);
     padding: 20px;
     border-radius: 5px;
   }
@@ -40,29 +52,54 @@
 @media (max-width:600px) {
   .header {
     padding: 10px 0px;
+    position: relative;
   }
+
+  .mobile-menu-btn, .close-menu-btn {
+    display: initial;
+  }
+
+  .header-menu {
+    background: var(--g12);
+    display: none;
+    flex-direction: column;
+  }
+
+  .hide-btn {
+    display: none;
+  }
+
+  .active-menu {
+    display: flex;
+  }
+
   .header ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-items: flex-end;
     gap: 0px;
   }
 
-  .header ul li{
+  .close-menu-btn {
+    align-self: flex-end;
+  }
+
+  .header ul li {
     margin-bottom: 10px;
   }
 
   .header ul li a {
     background: none;
     display: block;
-    text-align: center;
   }
+
   .header ul li a::after {
     content: "";
     width: 80vw;
     height: 2px;
-    background-color: var(--g5);
-    display: block; 
+    background-color: var(--g12);
+    display: block;
     margin-top: 10px;
   }
 }
@@ -72,7 +109,8 @@
     padding: 20px 0px;
     gap: 40px;
   }
-  .header ul li{
+
+  .header ul li {
     margin-bottom: 10px;
   }
 

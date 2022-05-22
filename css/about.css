@@ -25,18 +25,18 @@
 .profile-text h1 {
   font: 600 4.5rem/1.1 "Poppins", sans-serif;
   max-width: 10ch;
-  color: var(--g11);
+  color: var(--w);
   margin-bottom: 30px;
 }
 
 .profile-text p {
   font: 400 1.125rem/1.5 "Fira Sans", sans-serif;
-  color: var(--g7);
+  color: var(--g4);
 }
 
 .profile-text strong {
   font-weight: 600;
-  color: var(--g11);
+  color: var(--g2);
 }
 
 .profile-divider {

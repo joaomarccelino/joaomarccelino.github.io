@@ -18,12 +18,13 @@
 .projects-title h2 {
   text-transform: uppercase;
   font: 600 2.25rem/1.1 "Fira Sans", sans-serif;
-  color: var(--p5);
+  color: var(--p3);
   margin-bottom: 40px;
 }
 
 .projects-title h1 {
   font: 600 4rem/1.1 "Poppins", sans-serif;
+  color: var(--g2);
 }
 
 .project {
@@ -38,7 +39,7 @@
 
 .project img {
   border-radius: 5px;
-  border: 1px solid var(--g7);
+  border: 1px solid var(--g4);
 }
 
 .project-desc {
@@ -47,29 +48,29 @@
 
 .project-desc h3 {
   font: 600 2rem/1.1 "Poppins", sans-serif;
-  color: var(--g11);
+  color: var(--g2);
 }
 
 .project-desc p {
   font: 400 1.125rem/1.5 "Fira Sans", sans-serif;
-  color: var(--g7);
+  color: var(--g4);
   max-width: 35ch;
 }
 
 .project-desc strong {
   font-weight: 600;
-  color: var(--g11);
+  color: var(--g2);
 }
 
 .project-desc h4 {
   font: 600 1.125rem/1.1 "Fira Sans", sans-serif;
   text-transform: uppercase;
-  color: var(--g11);
+  color: var(--g3);
 }
 
 .project ul {
   font: 400 1.125rem/1.5 "Fira Sans", sans-serif;
-  color: var(--g7);
+  color: var(--g4);
   padding-bottom: 20px;
 }
 
@@ -86,23 +87,6 @@
   position: absolute;
   left: -15px;
   top: 13px;
-}
-
-@media (min-width: 800px) {
-  .project-bg {
-    background: linear-gradient(to right, var(--g1) 30%, var(--g11) 0%);
-  }
-
-  .project-bg .project-desc h4,
-  .project-bg .project-desc h3,
-  .project-bg .project-desc strong {
-    color: var(--w);
-  }
-
-  .project-bg .project-desc p,
-  .project-bg .project-desc ul {
-    color: var(--g5);
-  }
 }
 
 @media (max-width: 1000px) {

@@ -12,7 +12,7 @@ a {
 }
 
 body {
-  background-color: var(--g1);
+  background-color: var(--g11);
 }
 
 .button {
@@ -34,7 +34,7 @@ body {
 .section-divider {
   height: 8px;
   max-width: 1200px;
-  background: linear-gradient(to right, var(--g1) 50%, var(--p5) 0%);
+  background: linear-gradient(to right, var(--g11) 50%, var(--p5) 0%);
   margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
