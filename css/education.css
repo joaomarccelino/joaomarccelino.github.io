@@ -6,7 +6,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 .education-title {
@@ -45,10 +45,12 @@
   position: relative;
 }
 
-.college1 h4 {
+.college1 span {
   font: 400 1.125rem/1.1 "Fira Sans", sans-serif;
   text-transform: uppercase;
   color: var(--g2);
+  display: block;
+  margin-bottom: 20px;
 }
 
 .college1 h3 {
@@ -61,7 +63,7 @@
   color: var(--g2);
 }
 
-.college1 p + p {
+.college1 p+p {
   margin-top: 80px;
 }
 
@@ -82,10 +84,12 @@
   border: 1px solid var(--g12);
 }
 
-.college2 h4 {
+.college2 span {
   font: 400 1.125rem/1.1 "Fira Sans", sans-serif;
   text-transform: uppercase;
   color: var(--g11);
+  display: block;
+  margin-bottom: 20px;
 }
 
 .college2 h3 {
@@ -98,7 +102,7 @@
   color: var(--g9);
 }
 
-.college2 p + p {
+.college2 p+p {
   margin-top: 80px;
 }
 
@@ -138,11 +142,13 @@
   .education-title {
     grid-template-columns: 1fr;
   }
+
   .education-college {
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
   }
+
   .college1,
   .college2 {
     margin: 0 40px;
@@ -175,6 +181,9 @@
 }
 
 @media (max-width: 600px) {
+  .education-courses {
+    grid-template-columns: 1fr;
+  }
   .education-title h1 {
     font-size: 2.5rem;
   }
@@ -185,44 +194,28 @@
 
   .college1,
   .college2 {
-  padding: 16px 20px 20px 20px;
-}
-  .college1 h4,
-  .college1 p,
-  .college2 h4,
-  .college2 p   {
-    font-size: 0.675rem;
-  }
-  
-  .college1 h3,
-  .college2 h3 {
-    font-size: 1.125rem;
+    padding: 16px 20px 20px 20px;
   }
 
-  .college1 p + p,
-  .college2 p + p {
+  .college1 p+p,
+  .college2 p+p {
     margin-top: 40px;
   }
+
+  .college1 h3, .college2 h3 {
+    font-size: 1.5rem;
+  }
+
   .education-courses {
     gap: 10px 10px;
     margin-top: 40px;
   }
 
   .course {
-    padding: 8px 8px 8px 8px;
+    padding: 20px;
     border: 1px solid var(--p1);
     border-radius: 5px;
-  }
-  .course h4 {
-    font-size: 0.675rem;
-  }
-
-  .course h3 {
-    font-size: 1.125rem;
-  }
-
-  .course p {
-    font-size: 0.675rem;
+    margin-bottom: 20px;
   }
 }
 
@@ -231,6 +224,7 @@
   #education {
     margin-top: 40px;
   }
+
   .education-title h1 {
     font-size: 2rem;
   }
@@ -239,9 +233,8 @@
     margin-bottom: 10px;
     font-size: 1.125rem;
   }
+
   .education-college {
     margin-top: 40px;
   }
 }
-
-

@@ -147,7 +147,7 @@
 @media (max-width: 600px) {
   .project {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -156,32 +156,27 @@
     margin-bottom: 10px;
   }
   .project-desc {
-    gap: 10px;
-  }
-  .project-desc h3 {
-    font-size: 1.125rem;
+    flex-direction: column;
+    gap: 0px;
   }
 
-  .project-desc p,
-  .project-desc h4,
-  .project ul {
-    font-size: 0.675rem;
+  .desc ul {
+    display: flex;
+    gap: 20px;
   }
 
   .project ul {
-    padding-bottom: 0px;
+    padding-bottom: 20px;
   }
 
-  .projects-title h1 {
-    font-size: 2.5rem;
-  }
-
-  .projects-title h2 {
-    font-size: 1.5rem;
+  .project ul li {
+    background: var(--g12);
+    border-radius: 4px;
+    padding: 10px;
   }
 
   .project ul li::before {
-    top: 5px;
+    display: none;
   }
 
   .desc {
